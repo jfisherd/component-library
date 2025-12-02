@@ -1,10 +1,12 @@
-import { UserProfileCardProps } from "../../types";
+import type { UserProfileCardProps } from "../../types";
+
 
 
 export const UserProfileCard = () => {
     return (<>
-        <div>This is my div</div>
-
+        <div>User: {}</div>
+        <div>Email: {}</div>
+        <div>Role: {}</div>
     </>)
 }
 

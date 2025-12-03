@@ -1,15 +1,11 @@
-// import React from "react"; // NEEDED?
-import type { User } from "../../types";
 import type { UserProfileCardProps } from "../../types";
 
-
-
-export const UserProfileCard = () => {
+export const UserProfileCard = (props: UserProfileCardProps) => {
     return (
         <>
-            <div>User: { }</div>
-            <div>Email: { }</div>
-            <div>Role: { }</div>
+            <div>User {props.user.name}</div>
+            <div>Email: {props.showEmail? props.user.email: 'email not shown'}</div>
+            <div>Role: {props.showRole? props.user.role: 'role not shown'}</div>
         </>
     )
 }

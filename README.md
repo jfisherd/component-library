@@ -34,6 +34,7 @@ Accessing the properties of a property.
 Applying styling to created components. Edits were made to App.css and index.css, no change observed. 
 <br>
 // App.css and index.css
+<br>
 `AlertBox {
   border: 10px solid red;
   background-color: green;

@@ -1,10 +1,11 @@
 import type { AlertBoxProps } from "../../types";
 
 export const AlertBox = (props: AlertBoxProps) => {
+    const now = new Date()
     return (
         <>
-            <div>[I am a generic div]</div>
-            <div>Alert message: "{props.message}"</div>
+            <div>Process update @ {now.toString()}.</div>
+            <div>Message: "{(props.message)}"</div>
         </>
     )
 }

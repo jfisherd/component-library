@@ -14,10 +14,22 @@ function App() {
       <h2>Alert Box</h2>
       <AlertBox
         type='success'
-        message='my alert box message'
-        onClose={() => alert('an alert')}
+        message='Process succeeded.'
       ></AlertBox>
       <br></br>
+
+      <AlertBox
+        type='error'
+        message='An error has occurred'
+      ></AlertBox>
+      <br></br>
+
+      <AlertBox
+        type='apocalypse'
+        message='The apocalypse has occurred'
+      ></AlertBox>
+      <br></br>
+
       <h2>User Profile Card</h2>
 
       <UserProfileCard
@@ -32,18 +44,25 @@ function App() {
         showEmail={false}
         showRole={false}
       ></UserProfileCard>
+      <br></br>
 
       <h2>Product Display</h2>
       <ProductDisplay
-        product={{ id: 'A', name: 'Apple', price: 2, description: 'A pie apple', inStock: true }}
+        product={{ id: 'A', name: 'Apple', price: Math.round((Math.PI * 100)) / 100, description: 'A pie apple', inStock: false }}
         showDescription={true}
         showStockStatus={true}
       ></ProductDisplay>
       <br></br>
-    <ProductDisplay
-      product={{ id:'B', name: 'Banana', price: 0.5, description: 'Only suitable for bread', inStock: true}}
-      showDescription={false}
-      // showStockStatus={false}
+
+      <ProductDisplay
+        product={{ id: 'B', name: 'Banana', price: 0.1, description: 'Only suitable for bread', inStock: true }}
+        showDescription={false}
+        showStockStatus={true}
+      />
+      <br />
+
+      <ProductDisplay
+        product={{ id: 'C', name: 'Carrot', price: 100, description: 'Restores vision to the blind', inStock: true }}
       />
     </>
   )

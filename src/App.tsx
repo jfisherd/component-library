@@ -51,19 +51,19 @@ function App() {
         product={{ id: 'A', name: 'Apple', price: Math.round((Math.PI * 100)) / 100, description: 'A pie apple', inStock: false }}
         showDescription={true}
         showStockStatus={true}
-      ></ProductDisplay>
+      ></ProductDisplay> {/* optional closing tag, no relevant children in this lab */}
       <br></br>
 
       <ProductDisplay
         product={{ id: 'B', name: 'Banana', price: 0.1, description: 'Only suitable for bread', inStock: true }}
         showDescription={false}
         showStockStatus={true}
-      />
+      /> {/* no optional closing tag, no relevant children in this lab */}
       <br />
 
       <ProductDisplay
         product={{ id: 'C', name: 'Carrot', price: 100, description: 'Restores vision to the blind', inStock: true }}
-      />
+      /> {/* optional properties not included here */}
     </>
   )
 }

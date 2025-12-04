@@ -21,9 +21,16 @@ function App() {
       <h2>User Profile Card</h2>
 
       <UserProfileCard
-        user={{ id: '123', name: 'myName', email: 'address@email.com', role: 'somebody' }}
-        showEmail={false}
+        user={{ id: '123', name: 'Public_Person', email: 'address@email.com', role: 'somebody' }}
+        showEmail={true}
         showRole={true}
+      ></UserProfileCard>
+      <br></br>
+
+      <UserProfileCard
+        user={{ id: '456', name: 'Private_Person', email: 'shhhhh@email.com', role: 'd̵̨̛̛͉̹̫͖̫͉͍͎̝̤̦̺̹̱̭̄̃̅̏̓̍͌̆́͝ế̴̠̟̭̤̯̎̊͋̊͆͂̅̈́̈́̆̕̚͝͝m̷̢̧̡̦̾̽̈́̋̏̅́̌̅͌̕͘͘ó̴̹̠͓̜͕͛̍͛̍̕ñ̵̤̦͊̂́͂͗͊̿̄̋̕͝͝͠' }}
+        showEmail={false}
+        showRole={false}
       ></UserProfileCard>
 
       <h2>Product Display</h2>

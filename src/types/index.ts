@@ -11,7 +11,7 @@ export interface User {
   id: string;
   name: string;
   email: string;
-  role: string;
+  role: 'somebody'|'d̵̨̛̛͉̹̫͖̫͉͍͎̝̤̦̺̹̱̭̄̃̅̏̓̍͌̆́͝ế̴̠̟̭̤̯̎̊͋̊͆͂̅̈́̈́̆̕̚͝͝m̷̢̧̡̦̾̽̈́̋̏̅́̌̅͌̕͘͘ó̴̹̠͓̜͕͛̍͛̍̕ñ̵̤̦͊̂́͂͗͊̿̄̋̕͝͝͠';
   avatarUrl?: string;
 }
  

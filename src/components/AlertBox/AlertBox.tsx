@@ -3,8 +3,8 @@ import type { AlertBoxProps } from "../../types";
 export const AlertBox = (props: AlertBoxProps) => {
     return (
         <>
-            <div>my alert box</div>
-            <div>Message: {props.message}</div>
+            <div>[I am a generic div]</div>
+            <div>Alert message: "{props.message}"</div>
         </>
     )
 }
